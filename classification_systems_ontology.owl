@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://linkedeconomy.org/ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://linkedeconomy.org/ontology">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="elod" IRI="http://linkedeconomy.org/ontology#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Linked Economy</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#creator"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Gerasimos Razis</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#creator"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Michalis Vafopoulos</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Latest Update: 2016-01-21</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
+        <IRI>http://linkedeconomy.org/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Linked Economy Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#CPV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ISIC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NAICS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TRBC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UNSPSC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedHs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedNaics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedTrbc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedUnspsc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubCPVCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubHsCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubIsicCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubNaicsCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubTrbcCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubUnspscCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSuperCPVCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSuperHsCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSuperIsicCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSuperNaicsCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSuperTrbcCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSuperUnspscCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpvCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpvEnglishSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpvFiveDigits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpvFourDigits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpvFrenchSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpvGermanSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpvGreekSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpvItalianSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpvSpanishSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpvThreeDigits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpvTwoDigits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#greekShortName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hsCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hsSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isicCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isicSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#naicsCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#naicsSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#trbcCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#trbcSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#unspscCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#unspscSubject"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
+    </Declaration>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelatedHs"/>
+        <Class IRI="#CPV"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelatedNaics"/>
+        <Class IRI="#CPV"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelatedTrbc"/>
+        <Class IRI="#CPV"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelatedUnspsc"/>
+        <Class IRI="#CPV"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubCPVCode"/>
+        <Class IRI="#CPV"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubHsCode"/>
+        <Class IRI="#HS"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubIsicCode"/>
+        <Class IRI="#ISIC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubNaicsCode"/>
+        <Class IRI="#NAICS"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubTrbcCode"/>
+        <Class IRI="#TRBC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubUnspscCode"/>
+        <Class IRI="#UNSPSC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSuperCPVCode"/>
+        <Class IRI="#CPV"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSuperHsCode"/>
+        <Class IRI="#HS"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSuperIsicCode"/>
+        <Class IRI="#ISIC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSuperNaicsCode"/>
+        <Class IRI="#NAICS"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSuperTrbcCode"/>
+        <Class IRI="#TRBC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSuperUnspscCode"/>
+        <Class IRI="#UNSPSC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelatedHs"/>
+        <Class IRI="#HS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelatedNaics"/>
+        <Class IRI="#NAICS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelatedTrbc"/>
+        <Class IRI="#TRBC"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelatedUnspsc"/>
+        <Class IRI="#UNSPSC"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubCPVCode"/>
+        <Class IRI="#CPV"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubHsCode"/>
+        <Class IRI="#HS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubIsicCode"/>
+        <Class IRI="#ISIC"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubNaicsCode"/>
+        <Class IRI="#NAICS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTrbcCode"/>
+        <Class IRI="#TRBC"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubUnspscCode"/>
+        <Class IRI="#UNSPSC"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSuperCPVCode"/>
+        <Class IRI="#CPV"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSuperHsCode"/>
+        <Class IRI="#HS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSuperIsicCode"/>
+        <Class IRI="#ISIC"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSuperNaicsCode"/>
+        <Class IRI="#NAICS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSuperTrbcCode"/>
+        <Class IRI="#TRBC"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSuperUnspscCode"/>
+        <Class IRI="#UNSPSC"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpvCode"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpvEnglishSubject"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpvFiveDigits"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpvFourDigits"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpvFrenchSubject"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpvGermanSubject"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpvGreekSubject"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpvItalianSubject"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpvSpanishSubject"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpvThreeDigits"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpvTwoDigits"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#greekShortName"/>
+        <Class IRI="#CPV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hsCode"/>
+        <Class IRI="#HS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hsSubject"/>
+        <Class IRI="#HS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isicCode"/>
+        <Class IRI="#ISIC"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isicSubject"/>
+        <Class IRI="#ISIC"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#naicsCode"/>
+        <Class IRI="#NAICS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#naicsSubject"/>
+        <Class IRI="#NAICS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#trbcCode"/>
+        <Class IRI="#TRBC"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#trbcSubject"/>
+        <Class IRI="#TRBC"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#unspscCode"/>
+        <Class IRI="#UNSPSC"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#unspscSubject"/>
+        <Class IRI="#UNSPSC"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpvCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpvEnglishSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpvFiveDigits"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpvFourDigits"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpvFrenchSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpvGermanSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpvGreekSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpvItalianSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpvSpanishSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpvThreeDigits"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpvTwoDigits"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#greekShortName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hsCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hsSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isicCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isicSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#naicsCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#naicsSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#trbcCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#trbcSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#unspscCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#unspscSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
