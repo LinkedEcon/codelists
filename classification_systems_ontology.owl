@@ -29,12 +29,8 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Linked Economy</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="#creator"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Gerasimos Razis</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="#creator"/>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Michalis Vafopoulos</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
@@ -43,6 +39,10 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
         <IRI>http://linkedeconomy.org/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Michalis Vafopoulos</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
@@ -181,10 +181,10 @@
         <DataProperty IRI="#unspscSubject"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
@@ -493,6 +493,66 @@
         <DataProperty IRI="#unspscSubject"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CPV</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Common Procurement Vocabulary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CPV</IRI>
+        <Literal xml:lang="el" datatypeIRI="&rdf;PlainLiteral">Κοινό Λεξιλόγιο Προμηθειών</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HS</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Harmonized System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HS</IRI>
+        <Literal xml:lang="el" datatypeIRI="&rdf;PlainLiteral">Εναρμονισμένο Σύστημα</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ISIC</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">International Standard Industrial Classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ISIC</IRI>
+        <Literal xml:lang="el" datatypeIRI="&rdf;PlainLiteral">Διεθνή Πρότυπη Βιομηχανική Ονοματολογία</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NAICS</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">North American Industry Classification System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NAICS</IRI>
+        <Literal xml:lang="el" datatypeIRI="&rdf;PlainLiteral">Σύστημα Ταξινόμησης Βιομηχανίας Βόρειας Αμερικής</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TRBC</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Thomson Reuters Business Classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TRBC</IRI>
+        <Literal xml:lang="el" datatypeIRI="&rdf;PlainLiteral">Ταξινόμηση Επιχειρήσεων Thomson Reuters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UNSPSC</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">United Nations Standard Products and Services Code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UNSPSC</IRI>
+        <Literal xml:lang="el" datatypeIRI="&rdf;PlainLiteral">Τυποποιημένοι Κωδικοί Προϊόντων και Υπηρεσιών των Ηνωμένων Εθνών</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
